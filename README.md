@@ -10,8 +10,8 @@ Write a program which, using a given number of strengths, identifies the two clo
 
 Previous description copied from codingame.com
 
-Now, my own thoughts here regarding this one. This could be done by comparing each horse strength to all other horses not compared before; but it takes rather long to go through it all. It seemed to me that it would be better to sort each horse strength value and then simply compare them to the one next up; the return the smallest difference.
+Now, my own thoughts here regarding this one. This could be done by comparing each horse strength to all other horses not compared before; but it takes rather long to go through it all. It seemed to me that it would be better to sort each horse's strength value, compare them to the one next up; then return the smallest difference.
 Initially I tried bubble sort. It worked for the first two test cases of a few horses, but it failed to produce results on the last case where there were 99999 horses. According to the puzzle, my algorithm wasn't fast enough. Makes sense, I think the big O notation for bubble sort is O(n^2).
-So, my solution was to scour the internet for a faster sorting algorithm, I settled for merge sort; that has a big O notation of O(nlog(n)) in its best, mid and worst case scenarios. I studied the logic behind it and came up with this solution.
+So, my solution was to scour the internet for a faster sorting algorithm, I settled for quick sort. What can I say, name says it all :). I studied the logic behind it and came up with this solution.
 
 CHEERS!
