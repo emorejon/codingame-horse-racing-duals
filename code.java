@@ -61,7 +61,7 @@ class Solution {
         
         /*initializing diff vairable which will be the one with the final difference between horses.
         Since I'm trying to find minimums, I saw now harm starting it with a large number.*/
-        int diff = 999999;
+        int diff = Integer.MAX_VALUE;
         
         for (int i = 0; i < N; i++) {
             int pi = in.nextInt();
